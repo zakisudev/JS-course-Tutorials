@@ -11,11 +11,15 @@ start.addEventListener('click', ()=> {
   counter = setInterval(runTime, 1);
 
   function runTime() {
-    if (m < 10 || s < 10)  {
+    if (m < 10) {
+    time.textContent = `0${m}:0${s}:${ms}`;
+    ms++;
+  }
+  if (s < 10)  {
       time.textContent = `0${m}:0${s}:${ms}`;
       ms++;
-    }
-    if (ms>100) {
+      }
+  if (ms > 100) {
       ms = 0;
       s++;
     }
