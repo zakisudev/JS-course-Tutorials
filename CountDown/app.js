@@ -29,7 +29,7 @@ function getTimeDifference(start, end) {
 
 let timer = setInterval(function() {
   const startDate = new Date();
-  const endDate = new Date ("March 23, 2023 00:00:00");
+  const endDate = new Date ("March 24, 2023 00:00:00");
 
   let timeDifferenceObj = getTimeDifference(startDate, endDate);
 
