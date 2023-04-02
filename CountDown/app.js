@@ -44,7 +44,7 @@ function getTimeDifference(start, end) {
 
 let timer = setInterval(function() {
   const startDate = new Date();
-  const endDate = new Date ("March 14, 2024 00:00:00");
+  const endDate = new Date ("March 14, 2024 00:00:01");
 
   let timeDifferenceObj = getTimeDifference(startDate, endDate);
 
