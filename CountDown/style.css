@@ -6,7 +6,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 80vh;
+  height: 100vh;
   background: url('./31091.jpg') center center/cover;
 }
 
@@ -37,7 +37,6 @@ main {
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
-
 }
 
 .timer_day,
@@ -77,7 +76,71 @@ main {
   background: rgb(74, 97, 37);
   margin: auto;
   border-radius: 2px;
-  padding: 4px 2rem;
-  text-align: center;
-  text-transform: uppercase;
-}
+  padding: 1px .5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .container {
+      width: 300px;
+    }
+  
+    .timer_header h1 {
+      text-align: center;
+      font-size: 0.7rem;
+      columns: white;
+    }
+  
+    .timer {
+      background: rgb(42, 42, 42);
+      border-radius: 4px;
+      color: white;
+      padding: 2rem;
+      height: 200px;
+      box-shadow: 1px 2px 15px 10px rgba(63, 54, 73, 0.5), -1px -1px 50px 10px rgba(63, 54, 73, 0.5);
+    }
+  
+    .timer_day,
+    .timer_hour,
+    .timer_minute,
+    .timer_second {
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      border: 2px dashed rgb(255, 255, 255);
+      padding: 2rem;
+    }
+  
+    main {
+      margin: 3rem;
+    }
+  
+    .timer_body {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .timer_day,
+    .timer_hour,
+    .timer_minute,
+    .timer_second {
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      border: 2px dashed rgb(255, 255, 255);
+      padding: 1rem;
+    }
+  
+    .timer_label {
+      color: white;
+      text-align: center;
+      margin-top: 1rem;
+        font-weight: bold;
+        font-size: 0.5rem;
+      text-transform: uppercase;
+      }
+                                                                                                                                                                                                                                                                }
