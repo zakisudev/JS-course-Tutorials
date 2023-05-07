@@ -3,7 +3,7 @@ const start = document.querySelector('.start')
 const stop = document.querySelector('.stop')
 const reset = document.querySelector('.reset')
 
-let m=0,s=0,ms=0;
+let m=0, s=0, ms=0;
 let counter;
 
 start.addEventListener('click', ()=> {
@@ -23,7 +23,7 @@ start.addEventListener('click', ()=> {
         ms = 0;
         s++;
       }
-      if (s>60) {
+      if (s > 60) {
         ms = 0;
         m++;
       }
